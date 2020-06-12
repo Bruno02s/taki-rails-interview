@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+
 gem 'rails', '4.2.5.1'
 
 # SCSS
@@ -18,6 +19,12 @@ gem 'jquery-rails', '3.0.4'
 gem 'bcrypt-ruby', '3.1.2'
 
 group :development, :test do
+  #Test
+  gem 'rspec-rails', '~> 3.6'
+  gem 'capybara'
+  gem 'factory_bot_rails', '~> 4.0'
+  gem 'faker'
+
   # Debugger
   gem 'byebug', '3.5.1'
   gem 'pry-nav', '0.2.4'
@@ -26,6 +33,9 @@ group :development, :test do
 end
 
 group :development do
+  #Speed ​​up or use and run tests on RSpec
+  gem 'spring-commands-rspec'
+
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
